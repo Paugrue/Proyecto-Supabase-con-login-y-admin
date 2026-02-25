@@ -1,7 +1,7 @@
 import { supabase } from './supabaseClient';
 
 export class TaskService {
-    // Obtener las tareas del usuario logueado 
+    // Obtener las tareas del usuario
     static async getAll() {
         const { data, error } = await supabase
             .from('tasks')
