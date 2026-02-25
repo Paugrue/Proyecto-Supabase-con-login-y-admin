@@ -23,7 +23,7 @@ export class TaskService {
         return data;
     }
 
-    // Crear una nueva tarea con soporte para archivos
+    // Crear una nueva tarea 
     static async create(title, userId, fileUrl = null) {
         const { data, error } = await supabase
             .from('tasks')
